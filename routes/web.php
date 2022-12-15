@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('content.homepage', ['title' => 'PW Pertemuan 9']);
 });
+
+Route::get('/register', function () {
+    return view('content.register', ['title' => 'PW Pertemuan 9']);
+});
