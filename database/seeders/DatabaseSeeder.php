@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\MataKuliah;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,5 +22,21 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        // MataKuliah::create([
+        //     'nama_mata_kuliah' => 'Matematika'
+        // ]);
+        $data = [
+            [
+                'nama_mata_kuliah' => 'Bahasa Jepang'
+            ],
+            [
+                'nama_mata_kuliah' => 'Bahasa Inggris'
+            ],
+            [
+                'nama_mata_kuliah' => 'Biologi'
+            ]
+        ];
+        MataKuliah::insert($data);
     }
 }
